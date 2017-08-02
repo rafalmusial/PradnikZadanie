@@ -1,0 +1,120 @@
+$primaryColor: #000;
+$secondColor: #fff;
+$fillColor: #0a2b3f;
+$form1Color: #444;
+$form2Color: #6b6b6b;
+$borderColor: #dbdcdd;
+$redColor: #ed1651;
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	box-sizing: border-box;
+    font-family: 'Lato';
+}
+.container {
+  width: 1366px;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer {
+    height: 674px;
+    > div {
+        flex: 1 50%;
+    }
+    .call {
+        background-color: $fillColor;
+        .phone {
+            margin-left: 200px;
+            img {
+                margin: 60px 0 20px;
+            }
+            p {
+                color: $secondColor;
+                font-size: 36px;
+                margin-top: 40px;
+            }
+            ul {
+                list-style-type: none;
+                li {
+                    font-size: 48px;
+                    margin-top: 25px;
+                    a {
+                        color:$secondColor;
+                        text-decoration: none;
+                        &:hover {
+                            color: $redColor;
+                        }
+                    }
+                    &:nth-child(2) {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .form {
+        form {
+            margin-left: 50px;
+            margin-top: 115px;
+            position: relative;
+            fieldset {
+                legend {
+                    color: $primaryColor;
+                    font-size: 36px;
+                }
+                input {
+                    font-size: 18px;
+                    padding: 10px 20px;
+                    margin-top: 25px;
+                    background-color: $secondColor;
+                    border-radius: 5px;
+                    border: 1px solid $borderColor;
+                    width: 367px;
+                    &::placeholder {
+                        color: $form1Color;
+                    }
+                }
+                label {
+                    input.square {
+                        width: 25px;
+                        height: 25px;
+                    }
+                    span {
+                        position: absolute;
+                        top: 340px;
+                        left: 40px;
+                        display: inline-block;
+                        color: $form2Color;
+                        font-size: 10px;
+                        a{
+                        color: $form2Color;
+                        text-decoration: none;
+                            &:hover {
+                                color: $redColor;
+                            }
+                        }
+                    }
+                }
+                button.submit-btn {
+                    position: absolute;
+                    top: 400px;
+                    left: 278px;
+                    width: 132px;
+                    height: 40px;
+                    font-size: 24px;
+                    line-height: 24px;
+                    font-weight: 900;
+                    color: white;
+                    border: 1px solid $borderColor;
+                    border-radius: 5px;
+                    vertical-align: middle;
+                    text-align: center;
+                    background: linear-gradient(to bottom, #f05a69, #ed1651);
+                }
+            }
+        }
+    }
+}

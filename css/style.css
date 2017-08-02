@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lato'; }
+
+.container {
+  width: 1366px;
+  display: flex;
+  flex-wrap: wrap; }
+
+footer {
+  height: 674px; }
+  footer > div {
+    flex: 1 50%; }
+  footer .call {
+    background-color: #0a2b3f; }
+    footer .call .phone {
+      margin-left: 200px; }
+      footer .call .phone img {
+        margin: 60px 0 20px; }
+      footer .call .phone p {
+        color: #fff;
+        font-size: 36px;
+        margin-top: 40px; }
+      footer .call .phone ul {
+        list-style-type: none; }
+        footer .call .phone ul li {
+          font-size: 48px;
+          margin-top: 25px; }
+          footer .call .phone ul li a {
+            color: #fff;
+            text-decoration: none; }
+            footer .call .phone ul li a:hover {
+              color: #ed1651; }
+          footer .call .phone ul li:nth-child(2) {
+            margin-top: 10px; }
+  footer .form form {
+    margin-left: 50px;
+    margin-top: 115px;
+    position: relative; }
+    footer .form form fieldset legend {
+      color: #000;
+      font-size: 36px; }
+    footer .form form fieldset input {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin-top: 25px;
+      background-color: #fff;
+      border-radius: 5px;
+      border: 1px solid #dbdcdd;
+      width: 367px; }
+      footer .form form fieldset input::placeholder {
+        color: #444; }
+    footer .form form fieldset label input.square {
+      width: 25px;
+      height: 25px; }
+    footer .form form fieldset label span {
+      position: absolute;
+      top: 340px;
+      left: 40px;
+      display: inline-block;
+      color: #6b6b6b;
+      font-size: 10px; }
+      footer .form form fieldset label span a {
+        color: #6b6b6b;
+        text-decoration: none; }
+        footer .form form fieldset label span a:hover {
+          color: #ed1651; }
+    footer .form form fieldset button.submit-btn {
+      position: absolute;
+      top: 400px;
+      left: 278px;
+      width: 132px;
+      height: 40px;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 900;
+      color: white;
+      border: 1px solid #dbdcdd;
+      border-radius: 5px;
+      vertical-align: middle;
+      text-align: center;
+      background: linear-gradient(to bottom, #f05a69, #ed1651); }
+
+/*# sourceMappingURL=style.css.map */
